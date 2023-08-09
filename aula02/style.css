@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: rgb(170, 89, 236);
 }
 
 .container{
@@ -24,20 +25,21 @@
 }
 
 .texto{
-    color: white;
+    background-color: black;
+    color: gainsboro;
     font-size: 64px
 }
 
 .quadrado{
     width: 50px;
     height: 50px;
-    background-color: green;
+    background-color: goldenrod;
     transition: 0.5s;
     cursor: pointer;
 }
 
-.amarelo{
-    background-color: yellow;
+.roxo{
+    background-color: darkmagenta;
     rotate: 180deg;
 }
 
@@ -61,4 +63,22 @@
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     height: 50px;
+}
+
+.aumentar{
+    border-radius: 30%;
+    width: 70px;
+    height: 70px;
+}
+
+.diminuir{
+    border-radius: 30%;
+    width: 30px;
+    height: 30px;
+}
+
+.transparente{
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
 }
