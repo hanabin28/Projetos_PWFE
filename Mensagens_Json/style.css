@@ -10,20 +10,54 @@ body{
     display: grid;
     place-content: center;
     height: 100vh;
+    width: 100vw;
 }
 
 .cards-container{
-    width: 100%;
+    box-shadow: 4px 4px 4px rgb(150, 73, 18);
+    border-radius: 50px;
     background-color: chocolate;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
     gap: 8px;
+    padding: 8px;
 }
 
-.card{
+.cards-container .card{
+    width: 800px;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0px 2px 4px #0003;
+    box-shadow: 2px 2px 4px #0007;
     display: flex;
     padding: 16px;
+    gap: 16px;
 }
+
+.card img{
+    max-width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 4px solid chocolate;
+}
+
+.card h5{
+    background-color: chocolate;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card h3{
+    padding: 2px;
+    height: 25px;
+    background-color: chocolate;
+    border-radius: 15px;
+}
+
