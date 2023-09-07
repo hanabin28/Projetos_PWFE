@@ -2,11 +2,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: rgb(170, 89, 236);
+}
+
+body{
+    height: 100vh;
+    background-color: #d78f9a;
 }
 
 .container{
-    width: 100vw;
+    font-family: 'Wellfleet', serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,25 +19,28 @@
 }
 
 .item{
-    height: 90px;
-    width: 70%;
-    background-color: black;
+    border: 2px solid #e04640;
+    background-color: #1f0a08;
+    color: #1f0a08;
+    width: 65%;
+    height: 80px;
+    border-radius: 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 2rem;
     padding-inline: 32px;
 }
 
 .texto{
-    background-color: black;
     color: gainsboro;
-    font-size: 64px
 }
 
 .quadrado{
-    width: 50px;
-    height: 50px;
-    background-color: goldenrod;
+    border: 1px solid #d78f9a;
+    background-color: #e04640;
+    width: 45px;
+    height: 45px;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -45,11 +52,11 @@
 
 .circulo{
     border-radius: 50%;
-    rotate: 180deg;
+    transform: rotate(180deg);
 }
 
 .esquerda{
-    transform: translate(-500px);
+    transform: translate(-300px);
 }
 
 #forma4{
@@ -79,6 +86,7 @@
 
 .transparente{
     background-color: transparent;
+    border: none;
     width: 20px;
     height: 20px;
 }
