@@ -2,6 +2,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Wellfleet', serif;
+}
+
+header{
+    width: 100vw;
+    padding-block: 8px;
+    background-color: #d78f9a;
+    position:fixed;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body{
@@ -10,11 +22,10 @@ body{
 }
 
 .container{
-    font-family: 'Wellfleet', serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-block: 32px;
+    padding-block: 64px 32px;
     gap: 32px;
 }
 
