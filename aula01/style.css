@@ -1,3 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1a7445;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.container{
+    border: 10px solid #518421;
+    box-shadow:4px 4px #0005;
+    border-radius: 30px;
+    height: 50%;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: 'Pacifico', cursive;
+    background-color: #fde9fc;
+}
+
+button{
+    background-color:#1a5445;
+    border-radius: 3px;
+    width: 150px;
+    color: #fde9fc;
+    font-family: 'Roboto Mono', monospace;
+}
+
 .azul{
     color: blue;
 }

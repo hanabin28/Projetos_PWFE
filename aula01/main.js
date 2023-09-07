@@ -38,19 +38,19 @@ botaoTrocarTitulo.addEventListener('click' , trocarTitulo)
 function cadastrar(){
     const nome = document.getElementById('nome')
     let digitarNome = prompt('Digite seu nome:')
-    nome.textContent = `NOME: ${digitarNome}`
+    nome.textContent = `Nome: ${digitarNome}`
 
     const idade = document.getElementById('idade')
     let digitarIdade = prompt('Digite sua idade:')
-    idade.textContent = `IDADE: ${digitarIdade}`
+    idade.textContent = `Idade: ${digitarIdade}`
 
     const cidade = document.getElementById('cidade')
     let digitarCidade = prompt('Digite sua cidade:')
-    cidade.textContent = `CIDADE: ${digitarCidade}`
+    cidade.textContent = `Cidade: ${digitarCidade}`
 
     const media = document.getElementById('media')
     let digitarMedia = prompt('Digite sua média:')
-    media.textContent = `MÉDIA: ${digitarMedia}`
+    media.textContent = `Média: ${digitarMedia}`
     
     if(digitarMedia<5){
         media.classList.add('vermelha')
