@@ -39,11 +39,11 @@ function identificar(){
     let msg
     
     if(numero>0){
-        msg = 'positivo'
+        msg = 'Positivo'
     }else if(numero<0){
-        msg= 'negativo'
+        msg= 'Negativo'
     }else{
-        msg = 'zero'
+        msg = 'Zero'
     }
     resultado.textContent = msg 
 }
@@ -78,7 +78,7 @@ function calcularMedia(){
         if(novaMedia>=5){
             alert('Aprovado em exame!!')
         }else{
-            alert('Reprovado!')
+            alert('Reprovado!!')
         }
     }
 
@@ -86,3 +86,5 @@ function calcularMedia(){
 }
 
 botaoMedia.addEventListener('click', calcularMedia)
+//Fim do Item 3
+////

@@ -5,32 +5,80 @@
 }
 
 body{
+    font-family: 'Handlee', cursive;
+    font-weight: bolder;
+    height: 100vh;
+    width: 100vw;
     color: white;
+    background-color: #c7a497;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 3rem;
+    color: #6c5d55;
+    text-decoration: underline dotted #6c5d55;
 }
 
 .container{
-    width: 100vw;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     padding-block: 16px;
     gap: 16px;
 }
 
 .item{
-    background-color: rgb(24, 78, 160);
-    height: 45px;
-    width: 65%;
+    height: fit-content;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-inline: 32px;
-    gap: 16px;
+    flex-direction: column;
+    padding: 32px;
+    gap: 8px;
+    border-radius: 25px;
+    box-shadow:4px 4px #0005;
+    background-color: #6c5d55;
 }
 
-.resultado{
-    width: 75px;
+
+input, .resultado{
+    width: 55%;
     height: 20px;
-    background-color: white;
+    font-size: 0.9rem;
     color: black;
+    flex-wrap: wrap;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+input, span{
+    border-radius: 4px;
+    border: 2px solid #da4821;
+    background-color: #f5fdfe;
+}
+
+input:hover{
+    outline: 2px #da4821 solid;
+}
+
+button{
+    width: 80%;
+    font-family: 'Handlee', cursive;
+    font-weight: bolder;
+    font-size: 0.7rem;
+    border-radius: 4px;
+    background-color: #f5fdfe;
+    cursor: pointer;
+}
+
+button:hover{
+    color: #f5fdfe;
+    background-color: #da4821;
+    border: 2px solid #da4821;
+    transform: scale(1s);
 }
