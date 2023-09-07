@@ -6,12 +6,17 @@
 
 :root{
     font-family: 'Wellfleet', serif;
+    --background-pink: #d78f9a;
+    --background-container: #1f0a08;
+    --icons: #e04640;
+    --roxo-quadrado: darkmagenta;
+    --texto: gainsboro;
 }
 
 header{
     width: 100vw;
     padding-block: 8px;
-    background-color: #d78f9a;
+    background-color: var(--background-pink);
     position:fixed;
     overflow:hidden;
     display: flex;
@@ -21,7 +26,7 @@ header{
 
 body{
     height: 100vh;
-    background-color: #d78f9a;
+    background-color: var(--background-pink);
 }
 
 .container{
@@ -33,8 +38,8 @@ body{
 }
 
 .item{
-    border: 2px solid #e04640;
-    background-color: #1f0a08;
+    border: 2px solid var(--icons);
+    background-color: var(--background-container);
     width: 65%;
     height: 80px;
     border-radius: 35px;
@@ -46,12 +51,12 @@ body{
 }
 
 .texto{
-    color: gainsboro;
+    color: var(--texto);
 }
 
 .quadrado{
-    border: 1px solid #d78f9a;
-    background-color: #e04640;
+    border: 1px solid var(--background-pink);
+    background-color: var(--icons);
     width: 45px;
     height: 45px;
     transition: 0.5s;
@@ -59,7 +64,7 @@ body{
 }
 
 .roxo{
-    background-color: darkmagenta;
+    background-color: var(--roxo-quadrado);
     rotate: 180deg;
 }
 
