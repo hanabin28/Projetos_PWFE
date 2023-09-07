@@ -4,13 +4,23 @@
     box-sizing: border-box;
 }
 
-body{
+:root{
     font-family: 'Handlee', cursive;
+    --background-brown: #c7a497;
+    --container-brown: #6c5d55;
+    --decoration-orange: #da4821;
+    --background-white: #f5fdfe;
+    --text-color: black;
+    --shadow: #0005
+}
+
+
+body{
     font-weight: bolder;
     height: 100vh;
     width: 100vw;
-    color: white;
-    background-color: #c7a497;
+    color: var(--background-white);
+    background-color: var(--background-brown);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -19,8 +29,8 @@ body{
 
 h1{
     font-size: 3rem;
-    color: #6c5d55;
-    text-decoration: underline dotted #6c5d55;
+    color: var(--container-brown);
+    text-decoration: underline dotted var(--container-brown);
 }
 
 .container{
@@ -40,8 +50,8 @@ h1{
     padding: 32px;
     gap: 8px;
     border-radius: 25px;
-    box-shadow:4px 4px #0005;
-    background-color: #6c5d55;
+    box-shadow:4px 4px var(--shadow);
+    background-color: var(--container-brown);
 }
 
 
@@ -49,7 +59,7 @@ input, .resultado{
     width: 55%;
     height: 20px;
     font-size: 0.9rem;
-    color: black;
+    color: var(--text-color);
     flex-wrap: wrap;
     overflow: hidden;
     display: flex;
@@ -58,12 +68,12 @@ input, .resultado{
 
 input, span{
     border-radius: 4px;
-    border: 2px solid #da4821;
-    background-color: #f5fdfe;
+    border: 2px solid var(--decoration-orange);
+    background-color: var(--background-white);
 }
 
 input:hover{
-    outline: 2px #da4821 solid;
+    outline: 2px var(--decoration-orange) solid;
 }
 
 button{
@@ -72,13 +82,13 @@ button{
     font-weight: bolder;
     font-size: 0.7rem;
     border-radius: 4px;
-    background-color: #f5fdfe;
+    background-color: var(--background-white);
     cursor: pointer;
 }
 
 button:hover{
-    color: #f5fdfe;
-    background-color: #da4821;
-    border: 2px solid #da4821;
+    color: var(--background-white);
+    background-color: var(--decoration-orange);
+    border: 2px solid var(--decoration-orange);
     transform: scale(1s);
 }
