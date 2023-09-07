@@ -4,27 +4,52 @@
     box-sizing: border-box;
 }
 
-body{
-    color: white;
+
+:root{
+    font-family: 'Handlee', cursive;
+    --background-color: #6b7c90;
+    --background-items: #551214;
+    --background-span: #d52e1a;
+    --background-hover: #869fbd;
+    --text-color: #eef8fc;
+    --font-size:1.4rem;
 }
 
-.container{
+
+
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-block: 16px;
-    gap: 16px;
+    justify-content: center;
+    overflow-x: hidden;
+    padding-block: 32px;
+    font-weight: bolder;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 24px;
+    font-size: 1.4rem;
 }
 
 .item{
-    background-color: rgb(24, 78, 160);
-    height: 45px;
+    padding-block: 16px;
+    padding-inline: 16px;
+    border-radius: 25px;
+    background-color: var(--background-items);
+    height: 50%;
     width: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-inline: 32px;
     gap: 16px;
 }
 
@@ -34,13 +59,32 @@ body{
 }
 
 .numeros span{
+    width: 7%;
     display: inline-block;
-    background-color: crimson;
-    width: 50px;
-    border: 4px rgb(24, 78, 160) solid;
     text-align: center;
+    font-size: 0.9rem;
+    border: 4px var(--background-items) solid;
+    border-radius: 50px;
+    background-color: var(--background-span);
+}
+
+input{
+    outline: none;
+    height: 20px;
+}
+
+input, button{
+    border-radius: 6px;
+    padding: 4px;
+    border: none;
 }
 
 button{
-    padding: 0px 8px;
+    background-color: var(--text-color);
+    font-family: 'Handlee', cursive;
+    font-weight: bolder;
+}
+
+button:hover{
+    background-color: var(--background-hover);
 }
