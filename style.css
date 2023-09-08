@@ -40,10 +40,20 @@ main{
     width: 60%;
     height: 60%;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
-    flex-direction: column;
-    overflow: hidden;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+.container-tabela::-webkit-scrollbar{
+    width: 3px;
+    height: 7px;
+    background-color: var(--pink);
+}
+
+.container-tabela::-webkit-scrollbar-thumb{
+    background: var(--gray);
 }
 
 table{
@@ -69,11 +79,11 @@ table, tr, td{
 
 tr, td{
     padding: 4px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
-thead{
-    font-size: 1.3rem;
+thead th{
+    font-size: 1.4rem;
     background-color: var(--gray);
     color: var(--white);
 }
