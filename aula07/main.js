@@ -6,7 +6,13 @@ const spanCidade = document.getElementById('span-cidade')
 const spanEstado = document.getElementById('span-estado')
 const input = document.getElementById('digitar-cep')
 
-async function pegarDados(){
+
+function pegarDados(){
+    
+}
+
+
+async function mostrarDados(){
     
     const url = 'https://viacep.com.br/ws/01001000/json/'
 
@@ -20,4 +26,4 @@ async function pegarDados(){
 
 }
 
-input.addEventListener('blur', pegarDados)
+input.addEventListener('blur', mostrarDados)
