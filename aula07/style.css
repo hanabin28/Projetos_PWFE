@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: aqua;
+    padding: 16px;
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+span{
+    width: 8vw;
+    height: 1.9vh;
+    border: 2px solid blue;
+}
+
+input{
+    outline: none;
+    padding-left: 2px;
+}
+
+label, h4{
+    place-self: flex-start;
+}
