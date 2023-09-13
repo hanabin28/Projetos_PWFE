@@ -25,6 +25,8 @@ header{
     background-color: var(--blue);
 }
 
+
+
 .title{
     width: 19rem;
     display: flex;
@@ -35,6 +37,8 @@ header{
 .cachorro-icon g{
     fill: var(--orange);
 }
+
+
 
 .pesquisa{
     display: flex;
@@ -60,6 +64,11 @@ header{
     
 }
 
+button{
+    border: none;
+    cursor: pointer;
+}
+
 .pesquisa-icon{
     fill: var(--blue);
 }
@@ -68,6 +77,9 @@ input::placeholder{
     color: var(--blue);
     font-family: var(--font);
 }
+
+
+
 .galeria{
     display: flex;
     flex-wrap: wrap;

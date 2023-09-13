@@ -1,8 +1,15 @@
 'use strict'
 
-async function pegarImagens(){
 
-    const url = 'https://dog.ceo/api/breed/collie/images'
+async function pegarImagens(){
+    
+    const botaoPesquisar = document.getElementById('botao-pesquisa')
+    const pesquisa = document.getElementById('pesquisa-raça')
+    const url = 'https://dog.ceo/api/breed/pinscher/images'
+
+    if (pesquisa != '') {
+        url = `https://dog.ceo/api/breed/${pesquisa}/images`
+    }
 
     const response = await fetch(url)
     const imagens = await response.json()
