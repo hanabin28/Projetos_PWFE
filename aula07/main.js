@@ -1,29 +1,28 @@
 'use strict'
 
-const spanEndereco = document.getElementById('span-endereco')
-const spanBairro = document.getElementById('span-bairro')
-const spanCidade = document.getElementById('span-cidade')
-const spanEstado = document.getElementById('span-estado')
+const inputEndereco = document.getElementById('input-endereco')
+const inputBairro = document.getElementById('input-bairro')
+const inputCidade = document.getElementById('input-cidade')
+const inputEstado = document.getElementById('input-estado')
 const input = document.getElementById('digitar-cep')
 
 
-function pegarDados(){
+async function pegarDados(cep){
+    const url = `https://viacep.com.br/ws/${cep}/json/`
     
+    const response = await fetch(url)
+    const cepInfo = await response.json()
+    return cepInfo
 }
 
 
 async function mostrarDados(){
-    
-    const url = 'https://viacep.com.br/ws/01001000/json/'
+    const cep = await pegarDados(input.value)
 
-    if (input != '') {
-        url = 'https://viacep.com.br/ws/' + input + '/json/'
-    }
-
-    const response = await fetch(url)
-    const cep = await response.json()
-    return cep
-
+    inputEndereco.value = cep.logradouro
+    inputBairro.value = cep.bairro
+    inputCidade.value = cep.localidade
+    inputEstado.value = cep.uf
 }
 
 input.addEventListener('blur', mostrarDados)

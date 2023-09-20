@@ -21,15 +21,11 @@ body{
     flex-direction: column;
 }
 
-span{
-    width: 8vw;
-    height: 1.9vh;
-    border: 2px solid blue;
-}
 
 input{
     outline: none;
     padding-left: 2px;
+    border: none;
 }
 
 label, h4{
