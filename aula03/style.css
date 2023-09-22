@@ -37,7 +37,7 @@ h1{
     display: flex;
     align-items: flex-start;
     padding-block: 16px;
-    gap: 16px;
+    gap: 0px 16px;
 }
 
 .item{
