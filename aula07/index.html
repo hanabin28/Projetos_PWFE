@@ -8,21 +8,33 @@
     <title>Aula 07</title>
 </head>
 <body>
-    <div class="container">
-        <label for="cep">CEP</label>
-        <input type="text" id="digitar-cep" placeholder="Digite um cep">
-
-        <h4>Endereço</h4>
-        <input type="text" id="input-endereco">
-
-        <h4>Bairro</h4>
-        <input type="text" id="input-bairro">
-
-        <h4>Cidade</h4>
-        <input type="text" id="input-cidade">
-
-        <h4>Estado</h4>
-        <input type="text" id="input-estado">
-    </div>
+    <form autocomplete="off">
+        <div class="container">
+            <div class="container-info">
+                <label for="cep">CEP:</label>
+                <input type="text" id="digitar-cep" placeholder="Insira o cep">
+            </div>
+            
+            <div class="container-info">
+                <h4>Endereço:</h4>
+                <input type="text" id="input-endereco">
+            </div>
+    
+            <div class="container-info">
+                <h4>Bairro:</h4>
+                <input type="text" id="input-bairro">
+            </div>
+    
+            <div class="container-info">
+                <h4>Cidade:</h4>
+                <input type="text" id="input-cidade">
+            </div>
+    
+            <div class="container-info">
+                <h4>Estado:</h4>
+                <input type="text" id="input-estado">
+            </div>
+        </div>
+    </form>
 </body>
 </html>
