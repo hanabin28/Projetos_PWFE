@@ -1,15 +1,11 @@
 'use strict'
 
+const botaoPesquisar = document.getElementById('botao-pesquisa')
+const pesquisa = document.getElementById('pesquisa-raça')
 
 async function pegarImagens(){
     
-    const botaoPesquisar = document.getElementById('botao-pesquisa')
-    const pesquisa = document.getElementById('pesquisa-raça')
-    const url = 'https://dog.ceo/api/breed/pinscher/images'
-
-    if (pesquisa != '') {
-        url = `https://dog.ceo/api/breed/${pesquisa}/images`
-    }
+    const url = `https://dog.ceo/api/${pesquisa}/images`
 
     const response = await fetch(url)
     const imagens = await response.json()
@@ -31,4 +27,4 @@ async function carregarFotos(){
 }
 
 
-carregarFotos()
+pesquisa.addEventListener('blur', carregarFotos)
