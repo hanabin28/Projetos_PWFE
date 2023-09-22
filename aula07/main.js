@@ -20,7 +20,6 @@ async function pegarDados(cep){
 
 async function mostrarDados(){
     const cep = await pegarDados(input.value)
-    
 
     inputEndereco.value = cep.logradouro
     inputBairro.value = cep.bairro
