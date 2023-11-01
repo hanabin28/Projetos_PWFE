@@ -13,7 +13,7 @@
 //   |-> Serve para aparecer um campo para o usuário  digitar (tipo o JOption no java)
 
 // 'element'.textContent = :
-//   |-> Serve para modificar um objeto
+//   |-> Serve para modificar o conteúdo de um objeto
 
 
 function trocarTitulo(){
