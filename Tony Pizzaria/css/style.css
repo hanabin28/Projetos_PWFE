@@ -1,0 +1,46 @@
+body{
+    height: 100vh;
+    background-image: url(../img/background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(252,121,0,0.8463760504201681) 56%, rgba(252,121,0,0) 100%);
+    width: 100vw;
+    height: 100vh;
+    inset: 0;
+    z-index: -1;
+}
+
+header{
+    height: 150px;
+}
+
+main{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 100px;
+}
+
+.conteudo-container{
+    color: #fff;
+}
+
+.conteudo-container h1{
+    width: 230px;
+}
+
+.conteudo-container p{
+    width: 300px;
+}
