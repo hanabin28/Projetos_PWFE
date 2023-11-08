@@ -5,7 +5,8 @@ body{
     background-size: cover;
     display: flex;
     flex-direction: column;
-    padding: 32px 24px;
+    padding: 32px 24px 8px;
+    gap: 8px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -20,9 +21,7 @@ body::after{
     z-index: -1;
 }
 
-header{
-    height: 150px;
-}
+
 
 main{
     display: flex;
@@ -31,6 +30,7 @@ main{
     align-items: center;
     justify-content: space-evenly;
 }
+
 
 .conteudo-login{
     color: white;
@@ -44,11 +44,19 @@ main{
     width: 320px;
 }
 
+
 .container-login{
-    height: 150px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
 input{
+    height: 30px;
+    width: 283px;
     background-color: transparent;
     padding-left: 32px;
     color: white;
@@ -56,7 +64,6 @@ input{
     border-top: none;
     border-right: none;
     border-left: none;
-    height: 30px;
 }
 
 #mail{
@@ -76,7 +83,42 @@ input::placeholder{
 }
 
 input:focus{
-    border: none;
     outline: none;
-    border-bottom: solid white;
+    border-bottom: solid white 1px;
+}
+
+
+.botao-login{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.botao-login p{
+    color: white;
+    display: flex;
+    justify-content: end;
+    font-weight: bolder;
+}
+
+
+.conta{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    color: white;
+}
+
+.conta p{
+    font-size: 14px;
+}
+
+.conta a{
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
 }
