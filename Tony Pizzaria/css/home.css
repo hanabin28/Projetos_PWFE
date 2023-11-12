@@ -40,7 +40,16 @@ header .title h2{
 
 main{
     flex-grow: 1;
-    padding-left: 24px;
+    gap: 12px;
+    padding-left: 23px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-search{
+    display: flex;
+    justify-content: center;
+    padding-right: 23px;
 }
 
 input{
@@ -62,10 +71,10 @@ input:active, input:focus{
     outline: none;
 }
 
-.categorias{
+.categorias, .pizzas-fav{
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 5px;
 }
 
 .title h4{
@@ -73,14 +82,49 @@ input:active, input:focus{
     font-size: 15px;
 }
 
-.calabresa{
-    width: 150px;
+.pizzas{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
-.calabresa preco{
-    background-color: var(--pizzas-botao);
-    width: 10px;
-    
+.calabresa, .peperoni{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.calabresa-preco, .peperoni-preco{
+    width: fit-content;
+    background-color: var(--pizzas-preco);
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 16px;
+    padding: 3px 4px;
+    color: white;
+}
+
+.calabresa-preco{
+    top: 19rem;
+    left: 2rem;
+}
+
+
+.peperoni-preco{
+    top: 19rem;
+    left: 11.9rem;
+}
+
+.calabresa-sabor, .peperoni-sabor{
+    width: 112px;
+    background-color: rgba(0, 0, 0, 0.55);
+    position: absolute;
+    top: 20.57rem;
+    font-size: 12px;
+    padding: 4px 4px;
+    border-radius: 0px 0px 0px 8px;
+    color: white;
 }
 
 
