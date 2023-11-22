@@ -68,6 +68,8 @@ input::placeholder{
     color: rgba(0, 0, 0, 0.36);
 }
 
+
+/*  */
 .categorias, .pizzas-fav{
     display: flex;
     flex-direction: column;
@@ -106,7 +108,6 @@ input::placeholder{
     left: 2rem;
 }
 
-
 .peperoni-preco{
     top: 19rem;
     left: 11.9rem;
@@ -122,7 +123,10 @@ input::placeholder{
     border-radius: 0px 0px 0px 8px;
     color: white;
 }
+/*  */
 
+
+/*  */
 .recomendados{
     display: flex;
     flex-direction: column;
@@ -165,20 +169,68 @@ input::placeholder{
     top: 28rem;
     right: 6.4rem;
 }
+/*  */
 
+
+/*  */
+.bebidas{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container-bebida{
+    width: 315px;
+    height: 69px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container-bebida{
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.container-bebida .conteudo a{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.container-bebida .conteudo p{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.container-bebida span{
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--pizzas-preco);
+    border-radius: 16px;
+    padding: 3px 4px;
+}
+/*  */
+
+
+/*  */
 footer{
     height: 60px;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
     color: white;
     background-color: var(--cor-principal);
+    padding-block: 10px;
 }
 
-footer .perfil, footer .bebidas, footer .sobremesas{
+.perfil, footer .bebidas, .sobremesas{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0;
 }
 
 footer a{
