@@ -57,6 +57,7 @@ input{
     height: 49px;
     border-radius: 8px;
     border: none;
+    outline: none;
     padding-left: 13px;
     background-image: url(../img/Home_page/search.webp);
     background-repeat: no-repeat;
@@ -65,10 +66,6 @@ input{
 
 input::placeholder{
     color: rgba(0, 0, 0, 0.36);
-}
-
-input:active, input:focus{
-    outline: none;
 }
 
 .categorias, .pizzas-fav{
@@ -95,7 +92,6 @@ input:active, input:focus{
 }
 
 .calabresa-preco, .peperoni-preco{
-    width: fit-content;
     background-color: var(--pizzas-preco);
     position: absolute;
     font-size: 12px;
@@ -127,6 +123,48 @@ input:active, input:focus{
     color: white;
 }
 
+.recomendados{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pizzas-recom{
+    display: flex;
+    gap: 7px;
+}
+
+.pizzas-recom p, .pizzas-recom .brotinho-preco{
+    color: white;
+    font-size: 12px;
+}
+
+.pizzas-recom p{
+    width: 110px;
+    position: absolute;
+    top: 30rem;
+}
+
+.pizzas-recom .brotinho-preco{
+    font-weight: bold;
+}
+
+.peperoni-queijo p{
+    left: 2rem;
+}
+
+.brotinho p{
+    left: 13.7rem;
+}
+
+.brotinho .brotinho-preco{
+    background-color: var(--pizzas-preco);
+    border-radius: 16px;
+    padding: 3px 4px;
+    position: absolute;
+    top: 28rem;
+    right: 6.4rem;
+}
 
 footer{
     height: 60px;
