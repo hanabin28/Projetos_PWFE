@@ -19,12 +19,12 @@
     color: white;
     background-color: var(--botao-verde);
     font-size: 16px;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 .vermelho{
     color: white;
     background-color: var(--botao-vermelho);
     font-size: 14px;
-    font-weight: 300;
+    font-weight: normal;
 }
